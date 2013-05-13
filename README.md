@@ -3,8 +3,10 @@ To make a development environment:
 - Setup a drupalPro environment 
   - https://docs.google.com/a/perceptum.za.net/folder/d/0B1BmCT4HlfrzMDctQktTYUZjcVk/edit
 - Tricky part sort out PHP nesting errors:
+  - comment out the sendmail_path setting so that the default is used (notice the ";" at the beginning of the line)
+    - ; sendmail_path = /home/drupalpro/websites/config/sendmail.php
   - increase php limit (64 default) to 512M
-  - add the line: max_input_nesting_level=500 to the php.ini configuration file (usually /etc/php5/apache2/php.ini)
+  - add the line: max_input_nesting_level=500 to the php.ini configuration files (both /etc/php5/cli/php.ini and /etc/php5/apache2/php.ini)
   - increase xdebug limit (100 default) only if you use Xdebug
     - add the line: xdebug.max_nesting_level=500 to the configuration file : /etc/php5/apache2/conf.d/xdebug.ini
 - Start up drupalPro instance, and run all of the following commands from a console (press f4)

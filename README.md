@@ -1,13 +1,15 @@
 To make a development environment:
 ==================================
+- Setup a drupalPro environment 
+  - https://docs.google.com/a/perceptum.za.net/folder/d/0B1BmCT4HlfrzMDctQktTYUZjcVk/edit
+- Start up drupalPro instance, and run all of the following commands from a console (press f4)
 - First we install a localmailer that will send via mailtrap.io
   - wget https://raw.github.com/perceptum/dd_ecommerce_publix/master/make-mailtrap.sh -q -O- | bash
   - NOTES:
     - When prompted choose "Internet with smarthost"
     - System mail name: quickstart
     - SMTP relay host (blank for none) enter hostname:port: mailtrap.io:2525
-- Setup a drupalPro environment (https://docs.google.com/a/perceptum.za.net/folder/d/0B1BmCT4HlfrzMDctQktTYUZjcVk/edit)
-- From the console (press f4 once booted and logged in) run:
+- Now we get the Drupal Make scripts
   - wget https://raw.github.com/perceptum/dd_ecommerce_publix/master/make.sh -q -O- | bash
 
 If you are getting nesting errors:

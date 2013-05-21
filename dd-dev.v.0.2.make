@@ -282,7 +282,7 @@ projects[] = "purr_messages"
 
 
 ;************ DADDYS DEALS SPECIFIC ********************
-projects[dd][download][type] = "git"
-projects[dd][download][url] = "git@github.com:perceptum/dd_ecommerce_modules.git"
-projects[dd][download][subdir] = "sites/all/modules/dd_contrib"
-projects[dd][type] = "module"
+projects[dd_contrib][download][type] = "git"
+projects[dd_contrib][download][url] = "git@github.com:perceptum/dd_ecommerce_modules.git"
+projects[dd_contrib][download][subdir] = "sites/all/modules/dd_contrib"
+projects[dd_contrib][type] = "module"

@@ -35,15 +35,30 @@ libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEd
 libraries[ckeditor][directory_name] = "ckeditor"
 libraries[ckeditor][type] = "library"
 
+libraries[chosen][download][type] = "get"
+libraries[chosen][download][url] = "http://google-api-php-client.googlecode.com/files/google-api-php-client-0.6.0.tar.gz"
+libraries[chosen][directory_name] = "google-api-php-client"
+libraries[chosen][type] = "library"
+
+;galleria
+libraries[chosen][download][type] = "git"
+libraries[chosen][download][url] = "https://github.com/aino/galleria.git"
+libraries[chosen][directory_name] = "galleria"
+libraries[chosen][type] = "library"
+
+
+
+
 ; Modules
 
 ;adding projects missing
 
 
-projects[] = chosen
-projects[] = galleria
-projects[] = ckeditor
-
+projects[chosen][version] = "1.0"
+projects[galleria][version] = "1.0-beta3"
+projects[ckeditor][version] = "1.12"
+projects[gauth][version]= "7.x-1.2"
+projects[commerce_line_item_cart_form][version]= "7.x-1.2"
 
 
 projects[addthis][version] = "4.0-alpha2"

@@ -57,8 +57,8 @@ libraries[chosen][type] = "library"
 projects[chosen][version] = "1.0"
 projects[galleria][version] = "1.0-beta3"
 projects[ckeditor][version] = "1.12"
-projects[gauth][version]= "7.x-1.2"
-projects[commerce_line_item_cart_form][version]= "7.x-1.2"
+projects[gauth][version]= "1.2"
+projects[commerce_line_item_cart_form][version]= "1.2"
 
 
 projects[addthis][version] = "4.0-alpha2"

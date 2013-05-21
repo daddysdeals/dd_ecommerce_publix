@@ -277,6 +277,7 @@ projects[] = "media_youtube"
 projects[] = "commerce_message"
 projects[] = "services"
 projects[] = "jquery_ui_multiselect_widget"
+projects[] = "purr_messages"
 
 
 

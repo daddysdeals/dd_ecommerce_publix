@@ -17,6 +17,8 @@ To make a development environment:
     - System mail name: quickstart
     - SMTP relay host (blank for none) enter hostname:port: mailtrap.io:2525
 - Now we get the Drupal Make scripts
+  - wget https://raw.github.com/perceptum/dd_ecommerce_publix/master/drushmake.sh -q -O- | bash <platform name>
+- Alternatively, if running on a system using quickstart, run the following 
   - wget https://raw.github.com/perceptum/dd_ecommerce_publix/master/make.sh -q -O- | bash
 
 

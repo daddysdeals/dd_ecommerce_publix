@@ -263,3 +263,10 @@ projects[] = "commerce_message"
 projects[] = "services"
 projects[] = "jquery_ui_multiselect_widget"
 
+
+
+;************ DADDYS DEALS SPECIFIC ********************
+projects[dd][download][type] = "git"
+projects[dd][download][url] = "git@github.com:perceptum/dd_ecommerce_modules.git"
+projects[dd][download][subdir] = "sites/all/modules/dd_contrib"
+projects[dd][type] = "module"

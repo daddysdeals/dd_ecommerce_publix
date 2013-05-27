@@ -37,6 +37,9 @@ fi;
 echo "building new platform at $PLATFORM_ROOT"
 drush make $MAKE_FILE_DL $PLATFORM_ROOT
 
+# REMOVE THIS ONCE DONE TESTING
+exit 0
+
 echo "Creating Drush context for the new site [$PLATFORM_CONTEXT]"
 drush --root="$PLATFORM_ROOT" provision-save "$PLATFORM_CONTEXT" --context_type='platform'
 

@@ -5,6 +5,7 @@ MAKE_FILE_DL=/tmp/dd-dev.`date +%s`.make
 
 rm -f $MAKE_FILE_DL
 
+START=`date`
 echo "Downloading make file"
 wget $MAKEFILE_URL -v -O $MAKE_FILE_DL
 if [ ! -f "$MAKE_FILE_DL" ]; then
@@ -17,3 +18,8 @@ drush quickstart-create --domain=ddeals.dev --makefile=$MAKE_FILE_DL --profile=d
 echo "Cleaning up ..."
 rm -f $MAKE_FILE_DL
 echo "done"
+END=`date`
+echo
+echo
+echo "Start: $START"
+echo "End: $END"

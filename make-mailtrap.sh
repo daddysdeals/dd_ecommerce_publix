@@ -5,7 +5,7 @@ sudo apt-get install postfix mailutils
 
 PF=`cat /etc/postfix/main.cf | grep sasl_passwd`
 
-if [ -z "$PF"]; then
+if [ -z "$PF" ]; then
 	 echo smtp_sasl_auth_enable = yes | sudo tee -a /etc/postfix/main.cf
 	 echo smtp_sasl_mechanism_filter = plain | sudo tee -a /etc/postfix/main.cf
 	 echo smtp_sasl_security_options = noanonymous | sudo tee -a /etc/postfix/main.cf

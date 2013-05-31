@@ -1,5 +1,6 @@
 #!/bin/bash
 sudo dpkg --purge postfix
+sudo apt-get update
 sudo apt-get install postfix mailutils
 
 PF=`cat /etc/postfix/main.cf | grep sasl_passwd`

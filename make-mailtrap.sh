@@ -3,6 +3,8 @@ sudo dpkg --purge postfix mailutils
 sudo apt-get update
 sudo apt-get install postfix mailutils
 
+sudo /etc/init.d/postfix stop
+
 PF=`cat /etc/postfix/main.cf | grep sasl_passwd`
 
 if [ -z "$PF" ]; then
@@ -15,4 +17,4 @@ fi
 echo "mailtrap.io localdev-3436c605e37cc25e:82661e54bea5d52f" | sudo tee /etc/postfix/sasl_passwd
 
 sudo postmap /etc/postfix/sasl_passwd
-sudo /etc/init.d/postfix restart
+sudo /etc/init.d/postfix start

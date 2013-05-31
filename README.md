@@ -13,9 +13,12 @@ To make a development environment:
 - First we install a localmailer that will send via mailtrap.io
   - wget https://raw.github.com/perceptum/dd_ecommerce_publix/master/make-mailtrap.sh -q -O- | bash
   - NOTES:
-    - When prompted choose "Internet with smarthost"
-    - System mail name: quickstart
-    - SMTP relay host (blank for none) enter hostname:port: mailtrap.io:2525
+    - When prompted choose 
+      - "Internet with smarthost"
+    - System mail name: 
+      - quickstart
+    - SMTP relay host (blank for none) enter: 
+      - mailtrap.io:2525
 - Now we get the Drupal Make scripts
   - wget https://raw.github.com/perceptum/dd_ecommerce_publix/master/drushmake.sh -q -O- | bash <platform name>
 - Alternatively, if running on a system using quickstart, run the following 

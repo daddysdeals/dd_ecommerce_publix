@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo dpkg --purge postfix
+sudo dpkg --purge postfix mailutils
 sudo apt-get update
 sudo apt-get install postfix mailutils
 
